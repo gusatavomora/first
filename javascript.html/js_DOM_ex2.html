@@ -1,0 +1,33 @@
+<!doctype html>
+<!--o doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+      <head>
+           <title>pagina de exemplo de estrutura basica </title>
+           <meta charset="utf-8">
+          
+     </head>
+      <body> 
+
+          <h1>estrutura basica</h1>      
+
+          <input type="text" id="txtNome">
+          <button onclick="escreve()">só clica</button>
+          <div id= 'msg'></div>
+          
+          <script>
+
+              var txtNome2 = document.querySelector('#txtNome');
+
+
+
+
+                function escreve(){
+                    var nome = txtNome2.value
+                    document.querySelector('#msg').innerHTML = "bem-vindo, <b>" + nome + "</b>";
+
+                }
+
+          </script>
+        
+        </body>
+</html>
