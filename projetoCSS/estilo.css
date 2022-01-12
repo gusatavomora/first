@@ -68,7 +68,16 @@ main{
     margin-top: 10px;
 }
 
+#card {
+    background-color: white;
+}
 
+#card p{
+    border: 1px solid red;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
 
 .card p{
     border: 1px solid red;
