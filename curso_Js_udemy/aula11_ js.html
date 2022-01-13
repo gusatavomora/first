@@ -1,0 +1,55 @@
+<!doctype html>
+<!--o doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    
+  <title>pagina de exemplo de estrutura basica </title>
+  <meta charset="utf-8"> 
+    
+</head>
+
+<body>
+    <h1>estrutura basica</h1>
+
+<script>
+
+  var hoje = new Date();
+
+  var n = 0;  
+  function mudaN(n){
+    var n2 = n;
+    console.log(++n2);
+    console.log('mudaN:', n);
+    }
+
+  mudaN(10);
+  console.log(n);
+
+  console.log('------');
+
+  function mudaCor(cor){
+    this.cor = cor;
+  }
+  var caneta1 = {
+    cor: 'red',
+    preço: 2,
+    mudarCor: mudaCor
+  }
+
+  var caneta2 = {
+    cor: 'blue',
+    preço: 1,
+    mudarCor: mudaCor
+  }
+
+  var caneta3 = new Caneta('yellow');
+
+
+  caneta1.mudarCor('grenn');
+  console.log(caneta1);
+  console.log(caneta2);
+
+</script>
+</body>
+</html>
