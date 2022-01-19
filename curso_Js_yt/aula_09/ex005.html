@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+
+    <style>
+
+        body{
+            background-color: rgb(0, 189, 25);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id= 'vlk'>Iniciando estudos DOM</h1>
+    <p class= 'paragrafos'>Aqui vai o resultado</p>
+    <p class= 'paragrafos'>Aprendendo a usar<strong> DOM </strong>em javaScript</p>
+    <div>Clique em mim </div>
+    <hr>
+
+    <script>
+        //var corpo = window.document.body;
+        var d = window.document.querySelector('#vlk');
+        var y = window.document.getElementsByClassName('paragrafos')[0];
+        document.write(y.innerText + '<br>');
+        y.style.color = 'white';
+        y.style.background = 'blue'
+        document.write(d.innerHTML);
+        d.style.color = 'white';
+        d.style.background = 'pink'
+    </script>
+</body>
+</html>
