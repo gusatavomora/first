@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localidade</title>
+
+</head>
+<body>
+    <h1>Localidade</h1>
+    Escreva em qual pais você vive =><input type="text" id="txtpais" name="txtpais">
+    <input type="submit" value="enviar" onclick="enviar()">
+    <div id="res">Resultado da Localidade</div>
+    
+    <script>
+        function enviar(){
+            let txpais = window.document.querySelector('#txtpais')
+            let res = window.document.querySelector('#res')
+            let pais = String(txpais.value)
+            res.innerHTML += `<p>você mora no(a)  <strong>${pais}</strong></p>`
+            if(local != Brasil) {
+                res.innerHTML += `<p>você é Estrangeiro</p>`
+            }else{
+                res.innerHTML += `<p>você é Brasileiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
