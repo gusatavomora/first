@@ -1,9 +1,9 @@
-function fatorial(n) {
-    let fat = 1
-    for(let c = n; c > 1; c--){
-        fat *= c
+function number(num){
+    if(num % 2 == 0){
+        console.log(`seu numero foi ${num} ele é par!`)
+    }else{
+      console.log(`seu numero foi ${num}, ele é impar!`)
     }
-    return fat
 }
 
-console.log(fatorial(5))
+let num = number(5)
