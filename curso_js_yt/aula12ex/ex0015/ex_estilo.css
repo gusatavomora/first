@@ -1,5 +1,5 @@
 body{
-    background: rgb(70, 70, 240);
+    background: rgb(59, 59, 255);
     font: normal 15pt sans-serif;
 }
 
@@ -17,7 +17,7 @@ section{
     box-shadow: 4px 4px 8px black;
 }
 
-img{
+#foto{
     height: 200px;
 }
 

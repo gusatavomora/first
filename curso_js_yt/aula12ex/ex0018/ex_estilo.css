@@ -21,6 +21,10 @@ section{
     height: 200px;
 }
 
+#lista{
+    width: 150px;
+}
+
 footer{
     color: white;
     margin: 10px;
