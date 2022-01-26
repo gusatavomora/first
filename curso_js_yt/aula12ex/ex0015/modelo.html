@@ -2,41 +2,27 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
-    <link rel="stylesheet" href="ex_estilo.css">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex_exemplo.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
-
     <section>
         <div>
-            <p>ano de nascimento:
-                <input type="number" name="txtano" id="txtano" min="0">
-            </p>
-
-            <p>sexo:
-                <input type="radio" name="radsex" id="masc" checked >
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="verificar" onclick="verificar()">
-            </p>
+            <p>Number:<input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
-        <div id='res'>
-            <p>Preencha os dados a cima para ver o resultado</p>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option value="v">Digite um numero acima</option>
+            </select>
         </div>
     </section>
 
-    <footer>
-        <div>&copy;CursoJavaScript</div>
-    </footer>
-    
+    <footer>&copy;CursoJavaScript</footer>
+
     <script src="script.js"></script>
 </body>
 </html>
