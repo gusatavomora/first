@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Aninhadas</title>
+    <style>
+        li ul{
+            height: 0;
+            overflow: hidden;
+            transition: height 0.6s;
+        }
+        
+        li:hover{
+            background: #ccc;
+        }
+
+        li:hover ul{
+            height: 50px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+        </li>
+        <li>item 3</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>linguagem de marcação de hypertaxto</dd>
+        <dt>CSS</dt>
+        <dd>linguagem de criação de folhas de estilos</dd>
+    </dl>
+
+    <dl>
+        <dt>www</dt>
+        <dt>internet</dt>
+        <dd>rede mundial de computadores</dd>
+        <dt>JavaScript</dt>
+        <dd>linguagem script para internet</dd>
+        <dd>script para rodar no browser</dd>
+    </dl>
+</body>
+</html>

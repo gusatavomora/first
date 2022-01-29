@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <script>
+        let simbolo1 = "R$"
+        let simbolo2 = "$"
+        let simbolo3 = "£"
+
+        function moedaIf(simbolo) {
+            if(simbolo == "R$"){
+                console.log("Real");
+            }else if(simbolo == "$"){
+                console.log("Dolar");
+            }else if(simbolo == "£"){
+                console.log("Libra");
+            }else{
+                console.log("valor não encontrado")
+            }
+        }
+
+        function moedaSwitch(simbolo){
+            switch (simbolo){
+                case "R$":
+                    console.log("Real");
+                    break;
+                case "$":
+                    console.log("Dólar");
+                    break;
+                case "£":
+                    console.log("libra");
+                    break;
+                default:
+                    console.log("Valor não encontrado!");
+            }
+        }
+    </script>
+</body>
+</html>
