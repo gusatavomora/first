@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Google</title>
+
+    <style>
+        .formLogin{
+            font-family: sans-serif;
+            width: 20%;
+            margin: 50px auto 0;
+            border: 4px solid black;
+        }
+
+        .formLogin fieldset{
+            margin: 0;
+        }
+
+        .formLogin label{
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .formLogin legend{
+            text-align: center;
+            padding: 15px;
+            border: 5px solid black;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: white;
+            background: #0000FF;
+        }
+
+        #user, #pass, .bot{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #user, #pass{
+            padding: 10px;
+            border-radius: auto;
+        }
+
+        .bot{
+            margin-top: 10px;
+            padding: 10px;
+            background: rgb(39, 53, 255);
+            color: white;
+            font-size: 20   px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Formulário Google</h1>
+
+    <form action="#" method="POST" class="formLogin">
+        <legend>Login</legend>
+
+        <fieldset>
+
+            <label for="user">digite o seu email abaixo</label>
+            <input type="text" name="user" id="user" autofocus>
+
+            <label for="pass">digite sua senha abaixo</label>
+            <input type="password" name="pass" id="pass">
+
+            <input type="submit" value="Login" class="bot">
+        </fieldset>
+    </form>
+</body>
+</html>
