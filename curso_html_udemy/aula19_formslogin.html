@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Google</title>
+</head>
+<body>
+
+<h1>Formulário Google</h1>
+
+    <form action="#" method="POST" class="formLogin">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Email</label>
+            <input type="email" required placeholder="Digite um email válido">
+            <label>Numero de filhos</label>
+            <input type="number" min="0" max="1000" step=".5">
+            <label>Nascimento</label>
+            <input type="date" min="2022-01-30" max="2142-01-30">
+            
+            <br>  <!--NÃO USE BR, POR CONTA DA SEMÂNTICA!!!!-->
+
+            <label>
+            <input type="radio" name="sexo" value="M">
+                Maculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="M">
+                Feminino
+            </label>
+
+            <select>
+                <option value="SP">SÃO PAULO</option>
+                <option value="RJ">RIO DE JANEIRO</option>
+                <option value="GO">GOIÂNIA</option>
+                <option value="MG">MINAS GERAIS</option>
+            </select>
+            <br>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+
+            <label>
+                <input type="checkbox" name="HTML" value="HTML">
+                HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="CSS" value="CSS">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="JavaScript" value="JS">
+                JavaScript
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <textarea style="resize: none;" name="msg" rows="10" cols="30"></textarea>
+            </label>
+
+            <label>
+                <textarea style="resize: none;" name="contrato"  cols="30" rows="10" readonly>Preencha o formulario de contrato</textarea>
+            </label>
+
+            <label>
+                <input type="checkbox">
+                li e aceito
+            </label>
+
+            <input type="range">
+
+            <input type="color">
+
+            <select size="5" multiple>
+                <option value="op">opção 1</option>
+                <option value="op">opção 2</option>
+                <option value="op">opção 3</option>
+                <option value="op">opção 4</option>
+                <option value="op">opção 5</option>
+            </select>
+
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="button" value="button">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+</body>
+</html>

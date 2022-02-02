@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0.28
+    environment:
+      MYSQL_USER: node
+      MYSQL_PASSWORD: node
+      MYSQL_ROOT_PASSWORD: pao@123
+    ports:
+      - 3306:3306
