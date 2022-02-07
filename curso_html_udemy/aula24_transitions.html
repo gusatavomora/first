@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trsndtions</title>
+
+    <style>
+
+        div{
+            background: orange;
+            width: 100px;
+            height: 100px;
+
+            transition-property: width, height;
+            transition-duration: 1s, 3s;
+            transition-timing-function: cubic-bezier(1,-0.36,.14,1.54);
+            transition-delay: 0.5;
+        }
+
+        div:hover {
+            width: 500px;
+            height: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>div</div>
+
+</body>
+</html>
