@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Projeto Strata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.]
+    css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
     <header class="main-header">
         <a href="#">
-            <img src="#" alt="texto da imagem">
+            <img src="images/avatar.jpg" alt="texto da imagem">
         </a>
 
         <h1>
@@ -153,35 +161,11 @@
 
             <h5>Icons</h5>
             <ul class="lt-alterada">
+                <li><i class="fab fa-facebook"></i></li>
                 <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
             </ul>
 
             <h5>Actions</h5>
-
-            <p>
-                <a href="#" class="buuton-default">Default</a>
-                <a href="#" class="buuton-default button-default-stroke">Default</a>
-            </p>
-
-            <p>
-                <a href="#" class="buuton-default button-default-small">Default</a>
-                <a href="#" class="buuton-default button-default-small  button-default-stroke">Default</a>
-            </p>
-
-            <p>
-                <a href="#" class="buuton-default button-default-full">Default</a>
-                <a href="#" class="buuton-default button-default-full button-default-stroke">Default</a>
-            </p>
-
-            <p>
-                <a href="#" class="buuton-default button-full button-small">Default</a>
-                <a href="#" class="button-default button-default-full button-default-small button-default-stroke">Default</a>
-            </p>
-
 
             <h4>table</h4>
             <h5>default</h5>
@@ -196,7 +180,7 @@
                 </thead>
                 <tfoot>
                     <tr>
-                        <td colspan=""2></td>
+                        <td colspan="2"></td>
                         <td>100.00</td>
                     </tr>
                 </tfoot>
@@ -232,10 +216,92 @@
                     </tr>
                 </tbody>
             </table>
-
         </section>
+
+        <section>
+            <p>
+                <button class="buuton-default">Default</button>
+                <button class="buuton-default button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="buuton-default button-default-small">Default</button>
+                <button class="buuton-default button-default-small  button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="buuton-default button-default-full">Default</button>
+                <button class="buuton-default button-default-full button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="buuton-default button-full button-small">Default</button>
+                <button class="button-default button-default-full button-default-small button-default-stroke">Default</a>
+            </p>
+            <input type="submit" class="button-default" value="mandar">
+
+            <form>
+                <h5>Forms</h5>
+
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <select>
+                    <option value="0">Selecione ...</option>
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">Javascript</option>
+                </select>
+
+                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                <label><input type="radio" value="media" name="prioridade">Media prioridade</label>
+                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+
+                <label><input type="checkbox" name="copy" value="1">Envia-me uma cópia</label>
+                <label><input type="checkbox" name="human" value="1">Eu sou humano</label>
+
+                <label for="msg">Mensagem:</label>
+                <textarea placeholder="Escreva uma mensagem" id="msg"></textarea>
+            
+                <label><input type="submit" name="button-default" value="Enviar"></label>
+                <label><input type="reset" name="button-default-stroke" value="Limpar"></label>
+            </form>
+        </section>
+
+        <section>
+            <div class="gallery-full">
+                <img src="images/fulls/01.jpg">
+            </div>
+
+            <div class="gallery-thumb">
+                <img src="images/thumbs/01.jpg" alt="">
+                <img src="images/thumbs/05.jpg" alt="">
+                <img src="images/thumbs/02.jpg" alt="">
+                <img src="images/thumbs/04.jpg" alt="">
+                <img src="images/thumbs/03.jpg" alt="">
+                <img src="images/thumbs/06.jpg" alt="">
+                <img src="images/thumbs/02.jpg" alt="">
+                <img src="images/thumbs/01.jpg" alt="">
+                <img src="images/thumbs/05.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h4>Left &amp; Right</h4>
+
+            <p>
+                <img src="images/avatar.jpg" alt="">Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+
+            <p>
+                Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.<img src="images/avatar.jpg" alt="">
+            </p>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer class="main-footer"></footer>
 
 </body>
 </html>
