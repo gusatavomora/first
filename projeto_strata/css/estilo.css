@@ -1,4 +1,115 @@
 body{
     font-family: 'Source sans pro', helvetica, sans-serif, arial;
-    color: #666;
+    color: #111;
+    line-height: 1.7;
+}
+
+.main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+	width: 35%;
+  height: 100%;
+  padding: 124px 54px 72px;
+  box-sizing: border-box;
+  background-image: url(../images/overlay.png), url(../images/bg.jpg);
+  background-position: left top	;
+  background-size: auto, cover;
+	text-align: right;
+}
+
+a{
+	transition: color .2s linear, border .2s linear;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+  color: #66cdaa;
+}
+
+a:hover{
+  border-bottom-color: transparent;
+}
+
+p{
+  margin: 0 0 2em;
+}
+
+h1, h2,h3,h4, h5, h6{
+  color: #787878;
+  font-weight: normal;
+  margin: 0 0  1em 0;
+}
+
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 14px;
+}
+
+sub, sup{
+  font-size: 12px;
+}
+
+blockquote{
+  border-left: 5px solid #efefef;
+  margin: 2em 0;
+  padding: .5em 0 .5em 1.5em;
+}
+
+code{
+  background: #f7f7f7;
+  border-radius: .35em;
+  border: 2px solid #efefef;
+  font-size: .9em;
+  padding: .25em .65em;
+  font-family: 'Courier new', monospace;
+  color: #929292;
+}
+
+pre code{
+  display: block;
+}
+
+.main-header-title{
+	font-size: 24px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, .5);
+	font-weight: none;
+}
+
+.main-header-title strong{
+	color: white;
+  font-size: 22px;
+}
+
+.main-header-link{
+	color: inherit;
+}
+
+.main-header-link:hover{
+	color: #66cdaa;
+}
+
+.main-content{
+  width: 65%;
+  margin-left: 35%;
+  padding: 124px 54px 72px;
+  box-sizing: border-box;
 }
