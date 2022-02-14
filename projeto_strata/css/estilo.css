@@ -8,7 +8,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-	width: 35%;
+  width: 35%;
   height: 100%;
   padding: 124px 54px 72px;
   box-sizing: border-box;
@@ -36,7 +36,7 @@ p{
 h1, h2,h3,h4, h5, h6{
   color: #787878;
   font-weight: normal;
-  margin: 0 0  1em 0;
+  margin: 1em 0;
 }
 
 h1{
@@ -87,6 +87,41 @@ pre code{
   display: block;
 }
 
+ul, ol{
+  margin: 0;
+  padding: 0;
+  padding-left: 1.1em;
+}
+
+li{
+  padding: .5em;
+}
+
+.ul-alternate{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-alternate li{
+  border-bottom: 2px solid #d8d8d8;
+  padding-left: 0;
+}
+
+.ul-alternate li:last-child{
+  border: 0;
+}
+
+.ul-icons{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-icons li{
+  display: inline-block;
+  font-size: 2em;
+  color: #66cdaa;
+}
+
 .main-header-title{
 	font-size: 24px;
 	line-height: 1.5;
@@ -112,4 +147,13 @@ pre code{
   margin-left: 35%;
   padding: 124px 54px 72px;
   box-sizing: border-box;
+}
+
+.row{
+  overflow: auto;
+}
+
+.cols-2{
+  width: 50%;
+  float: left;
 }

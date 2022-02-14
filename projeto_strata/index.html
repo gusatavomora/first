@@ -5,6 +5,7 @@
     <title>Projeto Strata</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.]
     css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
@@ -149,34 +150,92 @@
                 </code>
             </pre>
 
-            <h5>Não ordenada</h5>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <div class="row">
+                <div class="cols-2">
+                    <h5>Não ordenada</h5>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+        
+                    <h5>Ordenada</h5>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+                <div class="cols-2">
+                    <h5>Alternate</h5>
 
-            <h5>Ordenada</h5>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
+                    <ul class="ul-alternate">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+        
+                    <h5>Icons</h5>
+                    <ul class="ul-icons">
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </div>
 
-            <h5>Alternate</h5>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-
-            <h5>Icons</h5>
-            <ul class="lt-alterada">
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-            </ul>
-
-            <h5>Actions</h5>
+            <section>
+                <h3>Actions</h3>
+                <p>
+                    <button class="buuton-default">Default</button>
+                    <button class="buuton-default button-default-stroke">Default</button>
+                </p>
+    
+                <p>
+                    <button class="buuton-default button-default-small">Default</button>
+                    <button class="buuton-default button-default-small  button-default-stroke">Default</button>
+                </p>
+    
+                <p>
+                    <button class="buuton-default button-default-full">Default</button>
+                    <button class="buuton-default button-default-full button-default-stroke">Default</button>
+                </p>
+    
+                <p>
+                    <button class="buuton-default button-full button-small">Default</button>
+                    <button class="button-default button-default-full button-default-small button-default-stroke">Default</a>
+                </p>
+                <input type="submit" class="button-default" value="mandar">
+    
+                <form>
+                    <h5>Forms</h5>
+    
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name">
+                
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+    
+                    <select>
+                        <option value="0">Selecione ...</option>
+                        <option value="1">HTML</option>
+                        <option value="2">CSS</option>
+                        <option value="3">Javascript</option>
+                    </select>
+    
+                    <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                    <label><input type="radio" value="media" name="prioridade">Media prioridade</label>
+                    <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+    
+                    <label><input type="checkbox" name="copy" value="1">Envia-me uma cópia</label>
+                    <label><input type="checkbox" name="human" value="1">Eu sou humano</label>
+    
+                    <label for="msg">Mensagem:</label>
+                    <textarea placeholder="Escreva uma mensagem" id="msg"></textarea>
+                
+                    <label><input type="submit" name="button-default" value="Enviar"></label>
+                    <label><input type="reset" name="button-default-stroke" value="Limpar"></label>
+                </form>
+            </section>
 
             <h4>table</h4>
             <h5>default</h5>
@@ -227,59 +286,6 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-        <section>
-            <p>
-                <button class="buuton-default">Default</button>
-                <button class="buuton-default button-default-stroke">Default</button>
-            </p>
-
-            <p>
-                <button class="buuton-default button-default-small">Default</button>
-                <button class="buuton-default button-default-small  button-default-stroke">Default</button>
-            </p>
-
-            <p>
-                <button class="buuton-default button-default-full">Default</button>
-                <button class="buuton-default button-default-full button-default-stroke">Default</button>
-            </p>
-
-            <p>
-                <button class="buuton-default button-full button-small">Default</button>
-                <button class="button-default button-default-full button-default-small button-default-stroke">Default</a>
-            </p>
-            <input type="submit" class="button-default" value="mandar">
-
-            <form>
-                <h5>Forms</h5>
-
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name">
-            
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-
-                <select>
-                    <option value="0">Selecione ...</option>
-                    <option value="1">HTML</option>
-                    <option value="2">CSS</option>
-                    <option value="3">Javascript</option>
-                </select>
-
-                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
-                <label><input type="radio" value="media" name="prioridade">Media prioridade</label>
-                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
-
-                <label><input type="checkbox" name="copy" value="1">Envia-me uma cópia</label>
-                <label><input type="checkbox" name="human" value="1">Eu sou humano</label>
-
-                <label for="msg">Mensagem:</label>
-                <textarea placeholder="Escreva uma mensagem" id="msg"></textarea>
-            
-                <label><input type="submit" name="button-default" value="Enviar"></label>
-                <label><input type="reset" name="button-default-stroke" value="Limpar"></label>
-            </form>
         </section>
 
         <section>
