@@ -157,3 +157,29 @@ li{
   width: 50%;
   float: left;
 }
+
+.button-default{
+  background-color: #66cdaa;
+  border: 2px solid #66cdaa;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.05em;
+  display: inline-block;
+}
+
+.button-default-stroke{
+  background-color: white;
+  border-color: #efefef;
+  color: inherit;
+}
+
+.button-default-small{
+  font-size: .9em;
+}
+
+.button-default-full{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
