@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    article:nth-child(1) a{
+      color: red;
+    }
+
+    article:nth-child(3) > p{   /* Seletor de filhos */
+      color: red;
+    }
+
+    article:nth-child(5) h3 + p{   /* Seletores de irmãos adjacentes */
+      margin-top: 50px;
+    }
+
+    article:nth-child(7) h3 ~ p{   /* Seletores gerais de irmãos */
+      color: orange;
+    }
+
+    article:not(.destaque){
+      color: blue;
+    }
+
+    .destaque{
+      background-color: yellow;
+    }
+
+    a[href="#"]{
+      opacity: .4;
+    }
+
+    a[href^="https"]{
+      text-decoration: none;
+    }
+
+
+    a[title]{
+      letter-spacing: 3px;
+      color: red;
+    }
+
+    a[href$=".pdf"]{
+      color: rgb(2, 112, 107);
+    }
+  </style>
+
+</head>
+<body>
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <p>antes do titulo</p>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+  </article>
+
+  <hr>
+
+  <article class="destaque">
+    <p>antes do titulo</p>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+    <p>Paragrafo <a href="#">apenas um link com <strong>negrito</strong></a></p>
+  </article>
+
+  <hr>
+  <ul>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="https://cursoemvideo.com" target="_blanck">Link externo</a></li>
+    <li><a href="https://cursoemvideo.com/qq.pdf" target="_blanck">Link externo</a></li>
+    <li><a href="aula24_transitions.html" title="Veja exercicio completo">Link interno</a></li>
+  </ul>
+</body>
+</html>

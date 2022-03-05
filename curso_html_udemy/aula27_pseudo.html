@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    input{
+      display: block;
+    }
+
+    input[type="checkbox"]:checked{
+      width: 30px;
+      height: 30px;
+    }
+
+    input[type="text"]:focus{
+      background: #ccc;
+    }
+
+    input::placeholder{
+      color: red;
+    }
+
+    button{
+      display: block;
+    }
+    
+    button:focus{
+      background-color: violet;
+    }
+
+    button:disabled{
+      background-color: blue;
+    }
+
+    p{
+      color: red;
+    }
+
+    p:empty:before{
+      content: "Paragrafo vazio não dá, né?!"
+    }
+
+    a{
+      display: block;
+    }
+
+    a:focus, a:hover, div:focus{
+      background: red;
+    }
+  </style>
+
+</head>
+<body>
+  <label><input type="checkbox" value="sim">Aceito o contrato</label>
+
+  <input type="text">
+  <input type="text" value="Valor inicial">
+  <input type="text" placeholder="Valor inicial">
+  <input type="text" placeholder="Valor inicial" readonly>
+  <input type="text" value="Valor inicial" disablsed>
+  <input type="text" placeholder="Valor inicial">
+
+  <br>
+
+  <button>Vai</button>
+  <button disabled>Volta</button>
+  
+  <br>
+
+  <a href="#">Link falso</a>
+  <a href="#">Link falso</a>
+  <a href="#">Link falso</a>
+  <a href="#">Link falso</a>
+
+  <br>
+
+  <div tabindex="1">Div 1</div>
+  <div tabindex="2">Div 2</div>
+  <div tabindex="3">Div 3</div>
+
+  <p>Paragrafo 1</p>
+  <p> </p>
+  <p></p>
+
+  <hr>
+
+</body>
+</html>
